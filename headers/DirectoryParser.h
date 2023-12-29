@@ -15,7 +15,7 @@ private:
     std::vector <std::string> allScripts;
     std::string outputDirectory;
 
-    void addUsedScriptsGui(std::vector <std::string> scriptsGui);
+    void addUsedScriptsGui(const std::vector <std::string>& scriptsGui);
 
 };
 

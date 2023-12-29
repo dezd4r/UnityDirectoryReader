@@ -2,16 +2,13 @@
 #include <iostream>
 
 
-int main(/*int argc, char* argv[]*/) {
-    //if (argc != 3) {
-    //    throw std::runtime_error("wrong number of arguments");
-    //}
+int main(int argc, char* argv[]) {
+    if (argc != 3) {
+        throw std::runtime_error("wrong number of arguments");
+    }
 
-    std::string inputDirectory/*(argv[1])*/;
-    std::string outputDirectory/*(argv[2])*/;
-
-    inputDirectory = "./Testing/TestCase01/TestCase01/";
-    outputDirectory = "./";
+    std::string inputDirectory(argv[1]);
+    std::string outputDirectory(argv[2]);
 
     DirectoryParser directoryParser;
 

@@ -1,5 +1,3 @@
-#include <utility>
-
 #include "../headers/ObjectFromScene.h"
 
 std::string ObjectFromScene::getId() {

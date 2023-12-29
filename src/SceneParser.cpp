@@ -7,7 +7,6 @@ void SceneParser::parse(std::string path) {
     std::ifstream file(path);
     if (file) std::cout << "opening file " + path + "\n";
     YAML::Node scene = YAML::Load(file);
-    std::cout << "kjvsjsgdj";
 
 
     for (const YAML::Node& node : scene) {

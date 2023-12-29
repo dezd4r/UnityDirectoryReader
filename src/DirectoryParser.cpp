@@ -45,7 +45,7 @@ void DirectoryParser::directoryWalker(const std::string& path) {
     }
 }
 
-void DirectoryParser::addUsedScriptsGui(std::vector<std::string> scriptsGui) {
+void DirectoryParser::addUsedScriptsGui(const std::vector<std::string>& scriptsGui) {
     for (const std::string &scr: scriptsGui) {
         usedScripts[scr] = true;
     }
